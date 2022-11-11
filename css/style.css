@@ -2,6 +2,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
+@font-face {
+  font-family: clacon;
+  src:url("/font/clacon.ttf") format('woff2');
+}
 
 a {
   color: #149ddd;
@@ -226,10 +230,12 @@ h6 {
   position: relative;
   min-width: 300px;
   margin-left: 350px;
+  
 
 }
 
 #hero h1 {
+  font-family: clacon;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -243,7 +249,8 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: clacon;
+
 
 }
 
