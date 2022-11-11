@@ -357,7 +357,6 @@ section {
   height: 60px;
   display: block;
   background: none;
-  border-radius: 0;
 }
 
 .skills .progress .skill {
@@ -368,23 +367,29 @@ section {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #050d18;
+
 }
 
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  
 }
 
 .skills .progress-bar-wrap {
   background: #dce8f8;
-  height: 10px;
+  height: 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+
 }
 
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 30px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #29dbe7;
+  border-radius: 10px;
 }
 
 @media (min-width: 1199px) {
@@ -393,9 +398,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -461,8 +464,17 @@ section {
   margin-bottom: 40px;
   margin-right: 40px;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 20px;
-  padding: 30px
+  border-radius: 10px;
+  padding: 30px;
+  transition: 5s;
+  background-color: white;
+
+
+
+}
+.services .icon-box:hover{
+  background-color: #f1fbff;
+
 }
 
 .services .icon {
@@ -514,9 +526,7 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+
 .contact {
   padding-bottom: 130px;
 }
