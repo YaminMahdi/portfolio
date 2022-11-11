@@ -261,7 +261,7 @@ h6 {
 #hero p .type {
   color: rgb(102, 196, 250);
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight:bolder;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 
 }
