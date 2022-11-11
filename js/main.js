@@ -1,26 +1,22 @@
-var endpoint = 'http://ip-api.com/json/?fields=status,country,city,query';
+var endpoint = 'https://api.db-ip.com/v2/free/self';
 
 var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
+xhr.onreadystatechange = function () 
+{
+  if (this.readyState == 4 && this.status == 200) 
+  {
     var response = JSON.parse(this.responseText);
-    if (response.status == 'success') {
-      console.log('query failed: ' + response.message);
-      const type1 = select('.type');
-      if (type1) {
-        let typed_strings1 = new Array(response.query+",</br>Are you from "+response.city+", "+response.country+"?")
-        new Typed('.type', {
-          strings: typed_strings1,
-          loop: true,
-          typeSpeed: 100,
-          backSpeed: 50,
-          backDelay: 4000
-        });
-}
-    }
-    else
-    {
-      return;
+    console.log('query failed: ' + response.message);
+    const type1 = select('.type');
+    if (type1) {
+      let typed_strings1 = new Array(response.ipAddress+",</br>Are you from..</br>"+response.city+", "+response.stateProv+", "+response.countryName+"?")
+      new Typed('.type', {
+        strings: typed_strings1,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 4000
+      });
     }
   }
 };
