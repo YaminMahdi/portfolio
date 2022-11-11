@@ -4,7 +4,12 @@ body {
 }
 @font-face {
   font-family: clacon;
-  src:url("/font/clacon.woff2") format('woff2');
+  src: url('/font/clacon.ttf') format('embedded-opentype'), /* Internet Explorer */
+  url('/font/clacon.ttf') format('woff2'),             /* Super Modern Browsers */
+  url('/font/clacon.ttf') format('woff'),              /* Pretty Modern Browsers */
+  url('/font/clacon.ttf') format('truetype'),          /* Safari, Android, iOS */
+  url('/font/clacon.ttf') format('svg');  
+
 }
 
 a {
