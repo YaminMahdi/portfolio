@@ -4,7 +4,7 @@ body {
 }
 @font-face {
   font-family: clacon;
-  src:url("/font/clacon.ttf") format('woff2');
+  src:url("/font/clacon.woff2") format('woff2');
 }
 
 a {
