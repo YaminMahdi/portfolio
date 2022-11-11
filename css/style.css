@@ -2,15 +2,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-@font-face {
-  font-family: clacon;
-  src: url('/font/clacon.ttf') format('embedded-opentype'), /* Internet Explorer */
-  url('/font/clacon.ttf') format('woff2'),             /* Super Modern Browsers */
-  url('/font/clacon.ttf') format('woff'),              /* Pretty Modern Browsers */
-  url('/font/clacon.ttf') format('truetype'),          /* Safari, Android, iOS */
-  url('/font/clacon.ttf') format('svg');  
-
-}
 
 a {
   color: #149ddd;
@@ -240,7 +231,7 @@ h6 {
 }
 
 #hero h1 {
-  font-family: clacon;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -254,7 +245,7 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: clacon;
+  font-family: 'Courier New', Courier, monospace;
 
 
 }

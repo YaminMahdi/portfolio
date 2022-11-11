@@ -13,7 +13,7 @@ xhr.onreadystatechange = function ()
       new Typed('.type', {
         strings: typed_strings1,
         loop: true,
-        typeSpeed: 100,
+        typeSpeed: 150,
         backSpeed: 50,
         backDelay: 4000
       });
